@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+*.log
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vercel local
+.vercel/
+
+# Entorno
+.env
+.env.local
+.env.production
+
+# Node (por si en el futuro se añaden scripts)
+node_modules/
+npm-debug.log*

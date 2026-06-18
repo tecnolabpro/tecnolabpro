@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>TecnoLab Pro | Herramientas de Inteligencia Artificial para Educación y Productividad</title>
+  <meta name="description" content="Descubre las mejores herramientas de Inteligencia Artificial. Aprende, automatiza y aumenta tu productividad con IA. Cursos, recursos y guías para docentes y profesionales." />
+  <meta name="keywords" content="inteligencia artificial, herramientas IA, ChatGPT, Claude, Gemini, cursos IA, educación tecnológica, productividad IA" />
+  <meta name="author" content="TecnoLab Pro" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tecnolabpro.com/" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tecnolabpro.com/" />
+  <meta property="og:title" content="TecnoLab Pro | Herramientas de Inteligencia Artificial" />
+  <meta property="og:description" content="Descubre las mejores herramientas de IA. Aprende, automatiza y aumenta tu productividad." />
+  <meta property="og:image" content="https://tecnolabpro.com/og-image.jpg" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="TecnoLab Pro" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TecnoLab Pro | Herramientas de Inteligencia Artificial" />
+  <meta name="twitter:description" content="Aprende, automatiza y aumenta tu productividad con IA." />
+  <meta name="twitter:image" content="https://tecnolabpro.com/og-image.jpg" />
+
+  <!-- ===== SCHEMA MARKUP ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TecnoLab Pro",
+    "url": "https://tecnolabpro.com",
+    "logo": "https://tecnolabpro.com/logo.png",
+    "description": "Plataforma de recursos y herramientas de Inteligencia Artificial para educación y productividad.",
+    "sameAs": [
+      "https://twitter.com/tecnolabpro",
+      "https://youtube.com/@tecnolabpro",
+      "https://instagram.com/tecnolabpro"
+    ]
+  }
+  </script>
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===== STYLES ===== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==============================
+       NAVBAR
+  ============================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo" aria-label="TecnoLab Pro inicio">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">TecnoLab<span class="logo-accent">Pro</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Menú principal">
+        <a href="#sobre-nosotros">Nosotros</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#curso">Curso</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="nav-cta" onclick="document.getElementById('herramientas').scrollIntoView({behavior:'smooth'})">
+        Explorar IA
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <section class="hero" id="inicio">
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-glow glow-blue" aria-hidden="true"></div>
+    <div class="hero-glow glow-violet" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Plataforma #1 de IA en Español
+      </div>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        Descubre las mejores<br />
+        <span class="gradient-text">herramientas de Inteligencia Artificial</span>
+      </h1>
+
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Aprende, automatiza y aumenta tu productividad con IA.<br />
+        Recursos, cursos y guías para profesionales y docentes.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <button class="btn-primary" onclick="document.getElementById('herramientas').scrollIntoView({behavior:'smooth'})">
+          <span>Explorar Herramientas</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="btn-ghost" onclick="document.getElementById('curso').scrollIntoView({behavior:'smooth'})">
+          Ver Curso Destacado
+        </button>
+      </div>
+
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Herramientas</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="12000">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Usuarios</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">Satisfacción</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       SOBRE NOSOTROS
+  ============================== -->
+  <section class="about" id="sobre-nosotros">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Impulsados por la <span class="gradient-text">innovación</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            TecnoLab Pro nació con una misión clara: democratizar el acceso al conocimiento de Inteligencia Artificial en el mundo hispanohablante.
+          </p>
+          <p>
+            Somos un equipo de profesionales apasionados por la tecnología, la educación y la productividad. Cubrimos, analizamos y recomendamos las mejores herramientas de IA para que puedas aplicarlas en tu trabajo, negocio o aula de clases.
+          </p>
+          <p>
+            Creemos que la IA no es el futuro — <strong>es el presente</strong>. Y queremos que tú seas parte de esa transformación.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">🧠</div>
+              <div>
+                <strong>Educación</strong>
+                <span>Aprende IA desde cero</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">⚡</div>
+              <div>
+                <strong>Productividad</strong>
+                <span>Automatiza tu flujo de trabajo</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🔬</div>
+              <div>
+                <strong>Investigación</strong>
+                <span>Análisis honestos y actualizados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal reveal-delay-2">
+          <div class="about-card-stack">
+            <div class="acard acard-1">
+              <span class="acard-icon">🤖</span>
+              <span>IA Generativa</span>
+            </div>
+            <div class="acard acard-2">
+              <span class="acard-icon">📚</span>
+              <span>EdTech</span>
+            </div>
+            <div class="acard acard-3">
+              <span class="acard-icon">🚀</span>
+              <span>Automatización</span>
+            </div>
+            <div class="acard-center">
+              <span class="acard-center-icon">⬡</span>
+              <span>TecnoLab<br/>Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       HERRAMIENTAS DE IA
+  ============================== -->
+  <section class="tools" id="herramientas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Herramientas recomendadas</span>
+        <h2 class="section-title">Las mejores <span class="gradient-text">IAs del momento</span></h2>
+        <p class="section-desc">Seleccionadas, probadas y analizadas por nuestro equipo de expertos.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- ChatGPT -->
+        <article class="tool-card reveal" data-tool="chatgpt">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#10a37f22,#10a37f44);">
+            <span class="tool-emoji">💬</span>
+          </div>
+          <div class="tool-badge">Más popular</div>
+          <h3 class="tool-name">ChatGPT</h3>
+          <p class="tool-desc">El asistente de IA de OpenAI. Ideal para redactar, programar, analizar textos y resolver problemas complejos de forma conversacional.</p>
+          <ul class="tool-tags">
+            <li>Texto</li><li>Código</li><li>Análisis</li>
+          </ul>
+          <a href="#" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre ChatGPT">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- Claude -->
+        <article class="tool-card reveal reveal-delay-1" data-tool="claude">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#8B5CF622,#8B5CF644);">
+            <span class="tool-emoji">🤖</span>
+          </div>
+          <div class="tool-badge badge-violet">Recomendado</div>
+          <h3 class="tool-name">Claude</h3>
+          <p class="tool-desc">IA de Anthropic enfocada en seguridad y razonamiento profundo. Excelente para documentos largos, análisis crítico y escritura profesional.</p>
+          <ul class="tool-tags">
+            <li>Documentos</li><li>Razonamiento</li><li>Escritura</li>
+          </ul>
+          <a href="https://claude.ai" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre Claude">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- Gemini -->
+        <article class="tool-card reveal reveal-delay-2" data-tool="gemini">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#4285F422,#EA433544);">
+            <span class="tool-emoji">✨</span>
+          </div>
+          <h3 class="tool-name">Gemini</h3>
+          <p class="tool-desc">La IA multimodal de Google. Integrada con el ecosistema Google (Docs, Drive, Gmail) para una productividad sin fricciones.</p>
+          <ul class="tool-tags">
+            <li>Multimodal</li><li>Google Suite</li><li>Búsqueda</li>
+          </ul>
+          <a href="#" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre Gemini">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- NotebookLM -->
+        <article class="tool-card reveal" data-tool="notebooklm">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#F59E0B22,#F59E0B44);">
+            <span class="tool-emoji">📓</span>
+          </div>
+          <div class="tool-badge badge-amber">Para docentes</div>
+          <h3 class="tool-name">NotebookLM</h3>
+          <p class="tool-desc">Cuaderno de investigación con IA de Google. Sube tus documentos y obtén resúmenes, respuestas y podcasts generados automáticamente.</p>
+          <ul class="tool-tags">
+            <li>Investigación</li><li>Resúmenes</li><li>Podcasts IA</li>
+          </ul>
+          <a href="#" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre NotebookLM">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- Gamma -->
+        <article class="tool-card reveal reveal-delay-1" data-tool="gamma">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#EC489922,#EC489944);">
+            <span class="tool-emoji">🎨</span>
+          </div>
+          <h3 class="tool-name">Gamma</h3>
+          <p class="tool-desc">Crea presentaciones, documentos y sitios web visualmente impactantes con IA en segundos. Sin necesidad de diseño previo.</p>
+          <ul class="tool-tags">
+            <li>Presentaciones</li><li>Diseño IA</li><li>Slides</li>
+          </ul>
+          <a href="#" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre Gamma">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- Perplexity -->
+        <article class="tool-card reveal reveal-delay-2" data-tool="perplexity">
+          <div class="tool-card-glow" aria-hidden="true"></div>
+          <div class="tool-icon-wrap" style="background: linear-gradient(135deg,#00D4FF22,#00D4FF44);">
+            <span class="tool-emoji">🔍</span>
+          </div>
+          <h3 class="tool-name">Perplexity</h3>
+          <p class="tool-desc">Motor de búsqueda potenciado con IA. Respuestas precisas con fuentes verificadas en tiempo real. El buscador del futuro, hoy.</p>
+          <ul class="tool-tags">
+            <li>Búsqueda</li><li>Fuentes reales</li><li>Research</li>
+          </ul>
+          <a href="#" class="tool-btn" target="_blank" rel="noopener" aria-label="Más información sobre Perplexity">
+            Más información <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CURSO DESTACADO
+  ============================== -->
+  <section class="course" id="curso">
+    <div class="course-bg-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="course-inner reveal">
+        <div class="course-badge-wrap">
+          <span class="course-eyebrow">⭐ Curso destacado</span>
+        </div>
+
+        <div class="course-grid">
+          <div class="course-visual">
+            <div class="course-img-frame">
+              <div class="course-img-placeholder" aria-label="Imagen del curso de IA para Educación">
+                <span class="course-img-icon">🎓</span>
+                <span class="course-img-title">IA para la<br/>Educación</span>
+              </div>
+              <div class="course-img-badge">Disponible ahora</div>
+            </div>
+            <div class="course-social-proof">
+              <div class="avatars" aria-label="Estudiantes inscritos">
+                <span class="avatar">👩‍🏫</span>
+                <span class="avatar">👨‍💻</span>
+                <span class="avatar">👩‍🎓</span>
+                <span class="avatar">👨‍🏫</span>
+              </div>
+              <span>+3.200 estudiantes inscritos</span>
+            </div>
+          </div>
+
+          <div class="course-content">
+            <h2 class="course-title">
+              Inteligencia Artificial<br/>
+              <span class="gradient-text">para la Educación</span>
+            </h2>
+            <p class="course-desc">
+              Aprende a integrar las herramientas de IA más poderosas en tu práctica docente y profesional. Desde cero hasta experto, con casos de uso reales.
+            </p>
+
+            <ul class="course-benefits">
+              <li><span class="benefit-check">✓</span> Más de 40 horas de contenido práctico</li>
+              <li><span class="benefit-check">✓</span> Certificado de finalización incluido</li>
+              <li><span class="benefit-check">✓</span> Acceso de por vida y actualizaciones</li>
+              <li><span class="benefit-check">✓</span> Comunidad exclusiva de docentes</li>
+              <li><span class="benefit-check">✓</span> Plantillas y recursos descargables</li>
+              <li><span class="benefit-check">✓</span> Soporte directo del instructor</li>
+            </ul>
+
+            <div class="course-modules">
+              <strong>Módulos incluidos:</strong>
+              <div class="modules-grid">
+                <span>🧠 Fundamentos de IA</span>
+                <span>💬 ChatGPT en el aula</span>
+                <span>📊 Evaluación con IA</span>
+                <span>🎨 Contenido visual IA</span>
+                <span>⚙️ Automatización</span>
+                <span>🔮 IA y el futuro</span>
+              </div>
+            </div>
+
+            <!-- ⬇️ REEMPLAZA la URL dentro de data-href CON TU ENLACE DE AFILIADO HOTMART -->
+            <a href="javascript:void(0)" data-href="https://go.hotmart.com/W106394380A" class="btn-primary btn-course curso-btn" rel="noopener sponsored">
+              <span>Acceder al Curso</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <p class="course-disclaimer">Enlace de afiliado · Tu apoyo nos permite seguir creando contenido gratuito</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       BLOG
+  ============================== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Conocimiento gratuito</span>
+        <h2 class="section-title">Blog & <span class="gradient-text">Recursos</span></h2>
+        <p class="section-desc">Artículos prácticos para dominar la Inteligencia Artificial.</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <article class="blog-card reveal">
+          <div class="blog-card-img blog-img-1" aria-hidden="true">
+            <span>💬</span>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">ChatGPT</span>
+            <h3><a href="#">Cómo usar ChatGPT para estudiar más eficientemente</a></h3>
+            <p>Técnicas probadas para convertir ChatGPT en tu tutor personal. Flashcards, explicaciones y más.</p>
+            <div class="blog-meta">
+              <span>📅 10 Jun 2025</span>
+              <span>⏱ 7 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-img blog-img-2" aria-hidden="true">
+            <span>👩‍🏫</span>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Educación</span>
+            <h3><a href="#">Las mejores herramientas IA para docentes en 2025</a></h3>
+            <p>Una selección de apps y plataformas que están revolucionando la enseñanza en todos los niveles.</p>
+            <div class="blog-meta">
+              <span>📅 3 Jun 2025</span>
+              <span>⏱ 9 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-img blog-img-3" aria-hidden="true">
+            <span>⚡</span>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Productividad</span>
+            <h3><a href="#">Productividad extrema con Inteligencia Artificial</a></h3>
+            <p>Flujos de trabajo optimizados con IA para multiplicar tu rendimiento personal y profesional.</p>
+            <div class="blog-meta">
+              <span>📅 28 May 2025</span>
+              <span>⏱ 11 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-img blog-img-4" aria-hidden="true">
+            <span>🤖</span>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Automatización</span>
+            <h3><a href="#">Automatización con IA: guía para no programadores</a></h3>
+            <p>Aprende a automatizar tareas repetitivas sin escribir código usando herramientas de IA accesibles.</p>
+            <div class="blog-meta">
+              <span>📅 20 May 2025</span>
+              <span>⏱ 8 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="blog-cta reveal">
+        <a href="#" class="btn-ghost">Ver todos los artículos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       TESTIMONIOS
+  ============================== -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Lo que dicen nuestros usuarios</span>
+        <h2 class="section-title">Historias de <span class="gradient-text">transformación</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testi-card reveal">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testi-text">"TecnoLab Pro cambió por completo mi forma de enseñar. Ahora preparo mis clases en la mitad del tiempo gracias a las herramientas que aprendí aquí."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">MR</div>
+            <div>
+              <strong>María Rodríguez</strong>
+              <span>Docente universitaria · México</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testi-text">"El curso de IA para Educación superó todas mis expectativas. Los módulos son prácticos, claros y aplicables desde el primer día. Totalmente recomendado."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av2" aria-hidden="true">CL</div>
+            <div>
+              <strong>Carlos López</strong>
+              <span>Consultor EdTech · Colombia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testi-text">"Gracias a TecnoLab Pro automaticé el 60% de mis tareas administrativas. Las guías de herramientas son las más completas que he encontrado en español."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av3" aria-hidden="true">AP</div>
+            <div>
+              <strong>Ana Pérez</strong>
+              <span>Emprendedora digital · Argentina</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FAQ
+  ============================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Preguntas frecuentes</span>
+        <h2 class="section-title">¿Tienes <span class="gradient-text">dudas?</span></h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">
+            ¿Necesito conocimientos previos para empezar con IA?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>No, en absoluto. Nuestro contenido está diseñado para personas con cualquier nivel de experiencia. Comenzamos desde los conceptos más básicos y avanzamos gradualmente hacia aplicaciones más complejas.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal reveal-delay-1">
+          <summary class="faq-question">
+            ¿Las herramientas que recomiendas son gratuitas?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>La mayoría tienen planes gratuitos que son más que suficientes para comenzar. Indicamos claramente qué funciones requieren suscripción de pago y si realmente vale la pena invertir en ellas.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal reveal-delay-2">
+          <summary class="faq-question">
+            ¿TecnoLab Pro recibe comisiones por sus recomendaciones?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí, somos transparentes al respecto. Algunos enlaces son de afiliados, lo que significa que ganamos una pequeña comisión si decides comprar a través de ellos, sin costo adicional para ti. Esto nos permite mantener el contenido gratuito.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">
+            ¿Con qué frecuencia actualizan el contenido?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>El mundo de la IA avanza muy rápido, por eso actualizamos nuestros artículos y guías semanalmente. También enviamos un newsletter con las novedades más importantes del sector.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal reveal-delay-1">
+          <summary class="faq-question">
+            ¿El curso de IA para Educación tiene certificado?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí. Al completar el curso recibirás un certificado digital que puedes compartir en LinkedIn y añadir a tu CV. El acceso es de por vida e incluye todas las actualizaciones futuras.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTACTO
+  ============================== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="section-eyebrow">Escríbenos</span>
+          <h2 class="section-title">¿Hablamos de <span class="gradient-text">IA?</span></h2>
+          <p>¿Tienes preguntas sobre herramientas, el curso o una colaboración? Estamos aquí para ayudarte.</p>
+
+          <div class="contact-channels">
+            <div class="channel">
+              <span class="channel-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <span>hola@tecnolabpro.com</span>
+              </div>
+            </div>
+            <div class="channel">
+              <span class="channel-icon">📱</span>
+              <div>
+                <strong>Redes sociales</strong>
+                <span>@tecnolabpro</span>
+              </div>
+            </div>
+            <div class="channel">
+              <span class="channel-icon">⏱️</span>
+              <div>
+                <strong>Tiempo de respuesta</strong>
+                <span>Menos de 24 horas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="">Selecciona un asunto</option>
+                <option value="herramientas">Consulta sobre herramientas IA</option>
+                <option value="curso">Información del curso</option>
+                <option value="colaboracion">Colaboración / Afiliados</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Enviar mensaje</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="logo" aria-label="TecnoLab Pro">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">TecnoLab<span class="logo-accent">Pro</span></span>
+          </a>
+          <p>La plataforma de referencia en IA, herramientas digitales y educación tecnológica en español.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter / X" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contenido</h4>
+          <ul>
+            <li><a href="#herramientas">Herramientas IA</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#curso">Curso destacado</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Afiliados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Aviso de afiliados</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> TecnoLab Pro. Todos los derechos reservados.</p>
+        <p class="footer-affil">Este sitio contiene enlaces de afiliados. Ver <a href="#">política de afiliados</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

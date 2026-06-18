@@ -1,0 +1,8 @@
+# robots.txt — TecnoLab Pro
+# https://tecnolabpro.com
+
+User-agent: *
+Allow: /
+
+# Sitemap (actualiza el dominio cuando lo tengas)
+Sitemap: https://tecnolabpro.com/sitemap.xml
